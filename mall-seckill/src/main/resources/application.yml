@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: gulimall-seckill
+    name: mall-seckill
 
   cloud:
     nacos:

@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: gulimall-order
+    name: mall-order
   datasource:
     username: root
     password: root

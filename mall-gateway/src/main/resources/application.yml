@@ -19,42 +19,42 @@ spring:
 #            - Query=uri,qq
 
         - id: product_route
-          uri: lb://gulimall-product
+          uri: lb://mall-product
           predicates:
             - Path=/api/product/**
           filters:
             - RewritePath=/api/(?<segment>/?.*),/$\{segment}
 
         - id: coupon_route
-          uri: lb://gulimall-coupon
+          uri: lb://mall-coupon
           predicates:
             - Path=/api/coupon/**
           filters:
             - RewritePath=/api/(?<segment>/?.*),/$\{segment}
 
         - id: third_party_route
-          uri: lb://gulimall-third-party
+          uri: lb://mall-third-party
           predicates:
             - Path=/api/thirdparty/**
           filters:
             - RewritePath=/api/thirdparty/(?<segment>/?.*),/$\{segment}
 
         - id: member_route
-          uri: lb://gulimall-member
+          uri: lb://mall-member
           predicates:
             - Path=/api/member/**
           filters:
             - RewritePath=/api/(?<segment>/?.*),/$\{segment}
 
         - id: ware_route
-          uri: lb://gulimall-ware
+          uri: lb://mall-ware
           predicates:
             - Path=/api/ware/**
           filters:
             - RewritePath=/api/(?<segment>/?.*),/$\{segment}
 
         - id: order_route
-          uri: lb://gulimall-order
+          uri: lb://mall-order
           predicates:
             - Path=/api/order/**
           filters:
@@ -67,40 +67,40 @@ spring:
           filters:
             - RewritePath=/api/(?<segment>/?.*), /renren-fast/$\{segment}
 
-        - id: gulimall_host_route
-          uri: lb://gulimall-product
+        - id: mall_host_route
+          uri: lb://mall-product
           predicates:
-            - Host=gulimall.com,item.gulimall.com
+            - Host=mall.com,item.mall.com
 
-        - id: gulimall_search_route
-          uri: lb://gulimall-search
+        - id: mall_search_route
+          uri: lb://mall-search
           predicates:
-            - Host=search.gulimall.com
+            - Host=search.mall.com
 
-        - id: gulimall_auth_route
-          uri: lb://gulimall-auth-server
+        - id: mall_auth_route
+          uri: lb://mall-auth-server
           predicates:
-            - Host=auth.gulimall.com
+            - Host=auth.mall.com
 
-        - id: gulimall_cart_route
-          uri: lb://gulimall-cart
+        - id: mall_cart_route
+          uri: lb://mall-cart
           predicates:
-            - Host=cart.gulimall.com
+            - Host=cart.mall.com
 
-        - id: gulimall_order_route
-          uri: lb://gulimall-order
+        - id: mall_order_route
+          uri: lb://mall-order
           predicates:
-            - Host=order.gulimall.com
+            - Host=order.mall.com
 
-        - id: gulimall_member_route
-          uri: lb://gulimall-member
+        - id: mall_member_route
+          uri: lb://mall-member
           predicates:
-            - Host=member.gulimall.com
+            - Host=member.mall.com
 
-        - id: gulimall_seckill_route
-          uri: lb://gulimall-seckill
+        - id: mall_seckill_route
+          uri: lb://mall-seckill
           predicates:
-            - Host=seckill.gulimall.com
+            - Host=seckill.mall.com
 
 
 

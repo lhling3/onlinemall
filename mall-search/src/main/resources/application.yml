@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: gulimall-search
+    name: mall-search
   cloud:
     nacos:
       discovery:

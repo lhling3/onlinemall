@@ -7,7 +7,7 @@ server:
 
 spring:
   application:
-    name: gulimall-auth-server
+    name: mall-auth-server
   cloud:
     nacos:
       discovery:
