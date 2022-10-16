@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RequestBody;
  * @date 2022-04-25
  **/
 
-@FeignClient("gulimall-coupon")
+@FeignClient("mall-coupon")
 public interface CouponFeignService {
 
     /**

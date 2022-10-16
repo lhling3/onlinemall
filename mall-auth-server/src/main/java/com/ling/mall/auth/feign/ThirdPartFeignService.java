@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestParam;
  * @createTime: 2022-04-24 10:37
  **/
 
-@FeignClient("gulimall-third-party")
+@FeignClient("mall-third-party")
 public interface ThirdPartFeignService {
 
     @GetMapping(value = "/sms/sendCode")

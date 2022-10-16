@@ -311,7 +311,7 @@ public class SeckillServiceImpl implements SeckillService {
                     if (aBoolean) {
                         //占位成功说明从来没有买过,分布式锁(获取信号量-1)
                         RSemaphore semaphore = redissonClient.getSemaphore(SKU_STOCK_SEMAPHORE + randomCode);
-                        //TODO 秒杀成功，快速下单
+                        //预减库存，超时为 100ms，看是否成功
                         boolean semaphoreCount = semaphore.tryAcquire(num, 100, TimeUnit.MILLISECONDS);
                         //保证Redis中还有商品库存
                         if (semaphoreCount) {

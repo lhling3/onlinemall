@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RequestParam;
  * @createTime: 2022-04-24 10:37
  **/
 
-@FeignClient("gulimall-member")
+@FeignClient("mall-member")
 public interface MemberFeignService {
 
     @PostMapping(value = "/member/member/register")

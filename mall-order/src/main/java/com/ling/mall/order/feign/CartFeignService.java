@@ -13,7 +13,7 @@ import java.util.List;
  * @date 2022-06-16
  **/
 
-@FeignClient("gulimall-cart")
+@FeignClient("mall-cart")
 public interface CartFeignService {
 
     /**

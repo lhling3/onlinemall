@@ -15,7 +15,7 @@ import java.util.List;
  * @date 2022-04-25
  **/
 
-@FeignClient("gulimall-search")
+@FeignClient("mall-search")
 public interface SearchFeignService {
 
     @PostMapping(value = "/search/save/product")

@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.GetMapping;
  * @date 2022-06-16
  **/
 
-@FeignClient("gulimall-coupon")
+@FeignClient("mall-coupon")
 public interface CouponFeignService {
 
     /**

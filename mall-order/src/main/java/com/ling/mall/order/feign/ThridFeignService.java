@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RequestBody;
  * @date 2022-06-16
  **/
 
-@FeignClient("gulimall-third-party")
+@FeignClient("mall-third-party")
 public interface ThridFeignService {
 
     @GetMapping(value = "/pay",consumes = "application/json")

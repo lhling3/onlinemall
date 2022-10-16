@@ -14,7 +14,7 @@ import java.util.List;
  * @date 2022-06-16
  **/
 
-@FeignClient("gulimall-member")
+@FeignClient("mall-member")
 public interface MemberFeignService {
 
     /**

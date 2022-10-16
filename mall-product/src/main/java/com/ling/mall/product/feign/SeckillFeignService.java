@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.PathVariable;
  * @date 2022-06-25
  **/
 
-@FeignClient(value = "gulimall-seckill",fallback = SeckillFeignServiceFallBack.class)
+@FeignClient(value = "mall-seckill",fallback = SeckillFeignServiceFallBack.class)
 public interface SeckillFeignService {
 
     /**

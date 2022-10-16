@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
  * @date 2022-05-21
  **/
 
-@FeignClient("gulimall-coupon")
+@FeignClient("mall-coupon")
 public interface CouponFeignService {
 
     @RequestMapping("/coupon/coupon/member/list")

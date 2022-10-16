@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
  * @date 2022-06-16
  **/
 
-@FeignClient("gulimall-product")
+@FeignClient("mall-product")
 public interface ProductFeignService {
 
     @RequestMapping("/product/skuinfo/info/{skuId}")

@@ -17,7 +17,7 @@ import java.util.List;
  * @date 2022-06-16
  **/
 
-@FeignClient("gulimall-ware")
+@FeignClient("mall-ware")
 public interface WmsFeignService {
 
     /**

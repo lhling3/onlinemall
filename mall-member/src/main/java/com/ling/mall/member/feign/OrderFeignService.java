@@ -14,7 +14,7 @@ import java.util.Map;
  * @date 2022-05-21
  **/
 
-@FeignClient("gulimall-order")
+@FeignClient("mall-order")
 public interface OrderFeignService {
 
     /**
